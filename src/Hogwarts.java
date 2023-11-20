@@ -35,8 +35,17 @@ public class Hogwarts {
     public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
-    public void comparisonOfStudentsGriffindor(Griffindor[] students) {
-        if (this.getSkillMagic() + this.transgression + this.nob)
+    public void comparisonOfStudentsHogwarts(Hogwarts students) {
+        int sumSkill = skillMagic + transgression;
+        int sumSkillStudent = students.skillMagic + students.transgression;
+        if (sumSkill > sumSkillStudent) {
+            System.out.println("Студент Хогвартс  " + this.getName() + " сильнее студента " + students.getName());
+        } else if (sumSkill < sumSkillStudent) {
+            System.out.println("Студент Хогвартс " + students.getName() + " сильнее студента " + this.getName());
+        } else {
+            System.out.println("Силы студентов равны");
+        }
     }
+
 
 }

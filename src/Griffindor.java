@@ -31,8 +31,8 @@ public class Griffindor extends Hogwarts {
     public void setBravery(int bravery) {
         this.bravery = bravery;
     }
-    public void comparisonOfStudentsGriffindor(Griffindor[] students) {
-            int sumSkill = this.getNobility() + this.getHonor() + this.getBravery();
+    public void comparisonOfStudentsGriffindor(Griffindor students) {
+            int sumSkill = nobility + honor + bravery;
         int sumSkillStudent = students.getNobility() + students.getHonor() + students.getBravery();
         if (sumSkill > sumSkillStudent) {
             System.out.println("Студент Гриффиндора " + this.getName() + " сильнее студента " + students.getName());

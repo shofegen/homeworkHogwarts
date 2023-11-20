@@ -54,9 +54,9 @@ public class Slizaren extends Hogwarts {
         this.lustForPower = lustForPower;
     }
 
-    public void comparisonOfStudentsSlizaren(Slizaren[] students) {
-        int sumSkill = this.trick() + this.determination() + this.ambition() + this.resourcefulness() + this.lustForPower();
-        int sumSkillStudent = students.trick() + students.determination() + students.ambition() + students.resourcefulness() + students.lustForPower();
+    public void comparisonOfStudentsSlizaren(Slizaren students) {
+        int sumSkill = trick + determination + ambition + resourcefulness + lustForPower;
+        int sumSkillStudent = students.trick + students.determination + students.ambition + students.resourcefulness + students.lustForPower;
         if (sumSkill > sumSkillStudent) {
             System.out.println("Студент Слизарен " + this.getName() + " сильнее студента " + students.getName());
         } else if (sumSkill < sumSkillStudent) {
